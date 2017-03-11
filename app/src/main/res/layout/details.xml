@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout android:id="@+id/details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4px"
+        android:stretchColumns="1"
+        >
+        <TableRow>
+            <TextView android:text="No.Plate:" />
+            <EditText android:id="@+id/number" />
+
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Destination:" />
+            <EditText android:id="@+id/destination" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="" />
+            <RadioGroup android:id="@+id/types">
+                <RadioButton android:id="@+id/resident"
+                    android:text="Resident:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton android:id="@+id/guest"
+                    android:text="Guest:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RadioGroup>
+
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Notes:" />
+            <EditText android:id="@+id/note"
+                android:singleLine="false"
+                android:gravity="top"
+                android:lines="2"
+                android:scrollHorizontally="false"
+                android:maxLines="2"
+                android:maxWidth="200sp"
+                />
+        </TableRow>
+
+        <Button android:id="@+id/save"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            />
+    </TableLayout>
+
+</RelativeLayout>
